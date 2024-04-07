@@ -1,16 +1,17 @@
-import { View, Text, SafeAreaView, FlatList, Image } from "react-native";
+import { View, Text, SafeAreaView, FlatList, Image, TouchableOpacity } from "react-native";
 import React from "react";
 import { styles } from "./DashboardStyles";
 
 const DashboradView = ({ data, navigation }) => {
   const renderPokemon = ({ item, index }) => {
+    console.log('item.img', item.img)
     return (
-      <View style={styles.listWrapper} key={index}>
+      <TouchableOpacity onPress={() => navigation.navigate('PokemonDetail', {name: item.name, img: item?.img })} style={styles.listWrapper} key={index}>
         <View style={{ ...styles.listItems, backgroundColor: item.color }}>
           <Text style={styles.textStyle}>{item.name}</Text>
           <Image style={styles.img} source={item.img} />
         </View>
-      </View>
+      </TouchableOpacity>
     );
   };
 

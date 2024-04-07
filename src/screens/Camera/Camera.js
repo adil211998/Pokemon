@@ -1,11 +1,8 @@
+import React from "react";
+import CameraView from "./CameraView";
 
-import React from 'react'
-import CameraView from './CameraView'
+const Camera = ({ navigation }) => {
+  return <CameraView navigation={navigation} />;
+};
 
-const Camera = ({navigation}) => {
-  return (
-   <CameraView navigation={navigation} />
-  )
-}
-
-export default Camera
+export default Camera;

@@ -1,5 +1,6 @@
 
 import { COLORS } from './theme/Colors';
+import {Dimensions} from 'react-native';
 
 export const POKEMON_DATA = [
   { name: "Bulbasaur", img: require("../assets/images/bulbasaur.png"), color: COLORS.Turquoise },
@@ -46,6 +47,13 @@ export const POKEMON_DATA = [
   { name: "Weedle", img: require("../assets/images/weedle.png"), color: COLORS.DodgerBlue },
   { name: "Bulbasaur", img: require("../assets/images/bulbasaur.png"),  color: COLORS.GreenYellow },
   { name: "Beedrill", img: require("../assets/images/beedrill.png"), color: COLORS.ScreaminGreen  },
-  
- 
 ];
+
+
+const windowWidth = Dimensions.get('window').width;
+const windowHeight = Dimensions.get('window').height;
+
+export {
+  windowHeight,
+  windowWidth
+}

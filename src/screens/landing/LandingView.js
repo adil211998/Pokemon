@@ -15,11 +15,6 @@ const LandingView = ({ navigation }) => {
           />
           <Button
             btnStyle={styles.btn}
-            title={"Dashboard Details"}
-            onPress={() => navigation.navigate("PokemonDetail")}
-          />
-          <Button
-            btnStyle={styles.btn}
             title={"Profile"}
             onPress={() => navigation.navigate("Profile")}
           />

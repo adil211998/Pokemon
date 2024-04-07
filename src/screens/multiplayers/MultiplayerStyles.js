@@ -6,5 +6,10 @@ export const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: COLORS.White
+    },
+    body:{
+        justifyContent: 'center',
+        alignItems: 'center',
+        flex: 1
     }
 }) 
