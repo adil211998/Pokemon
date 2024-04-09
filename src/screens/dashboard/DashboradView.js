@@ -4,9 +4,8 @@ import { styles } from "./DashboardStyles";
 
 const DashboradView = ({ data, navigation }) => {
   const renderPokemon = ({ item, index }) => {
-    console.log('item.img', item.img)
     return (
-      <TouchableOpacity onPress={() => navigation.navigate('PokemonDetail', {name: item.name, img: item?.img })} style={styles.listWrapper} key={index}>
+      <TouchableOpacity onPress={() => navigation.navigate('PokemonDetail', {name: item.name, img: item?.img, color: item.color })} style={styles.listWrapper} key={index}>
         <View style={{ ...styles.listItems, backgroundColor: item.color }}>
           <Text style={styles.textStyle}>{item.name}</Text>
           <Image style={styles.img} source={item.img} />

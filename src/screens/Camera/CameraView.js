@@ -29,7 +29,6 @@ const CameraView = () => {
       quality: 1,
     });
     setImageSource({ uri: result.assets[0].uri });
-    console.log("result", result.assets[0].uri);
     if (!result.cancelled) {
       // Use the captured image URI here
       console.log(result.uri);

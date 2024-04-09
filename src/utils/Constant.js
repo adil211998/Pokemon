@@ -2,7 +2,7 @@
 import { COLORS } from './theme/Colors';
 import {Dimensions} from 'react-native';
 
-export const POKEMON_DATA = [
+ const POKEMON_DATA = [
   { name: "Bulbasaur", img: require("../assets/images/bulbasaur.png"), color: COLORS.Turquoise },
   { name: "Butterfree", img: require("../assets/images/butterfree.png") ,  color: COLORS.RadicalRed },
   { name: "Caterpie", img: require("../assets/images/caterpie.png") ,  color: COLORS.GreenYellow },
@@ -55,5 +55,6 @@ const windowHeight = Dimensions.get('window').height;
 
 export {
   windowHeight,
-  windowWidth
+  windowWidth,
+  POKEMON_DATA
 }

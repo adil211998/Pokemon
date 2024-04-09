@@ -10,5 +10,16 @@ export const styles = StyleSheet.create({
     img: {
         height: windowHeight/2,
         width: windowWidth,
+        backgroundColor: 'transparent'
       },
+      name:{
+          fontSize: 30,
+          fontWeight: 'bold',
+          textAlign: 'center',
+          color: COLORS.Black,
+          marginTop: 20
+      },
+      body:{
+          flex: 0.65
+      }
 }) 

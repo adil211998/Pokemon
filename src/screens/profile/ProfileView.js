@@ -7,9 +7,6 @@ import Button from '../../components/Button';
 const ProfileView = () => {
   return (
     <View style={styles.container}>
-      <View style={styles.header}>
-        <Text style={styles.headerText}>Profile</Text>
-      </View>
       <View style={styles.profileInfo}>
         <Image
           source={require('../../assets/images/beedrill.png')} // Placeholder image URL
