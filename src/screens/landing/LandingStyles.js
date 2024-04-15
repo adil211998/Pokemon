@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
 import { COLORS } from "../../utils/theme/Colors";
-import { SHADOW_STYLE } from '../../utils/helpers/Helper';
+import { SHADOW_STYLE } from "../../utils/helpers/Helper";
 import { windowHeight, windowWidth } from "../../utils/Constant";
 
 export const styles = StyleSheet.create({
@@ -21,26 +21,26 @@ export const styles = StyleSheet.create({
   wrapper: {},
   slide1: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#9DD6EB'
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "#9DD6EB",
   },
   slide2: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#97CAE5'
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "#97CAE5",
   },
   slide3: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: COLORS.Turquoise
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: COLORS.Turquoise,
   },
   text: {
-    color: '#fff',
+    color: "#fff",
     fontSize: 30,
-    fontWeight: 'bold'
+    fontWeight: "bold",
   },
   listWrapper: {
     ...SHADOW_STYLE,
@@ -63,8 +63,8 @@ export const styles = StyleSheet.create({
     fontWeight: "500",
     marginVertical: 4,
   },
-  imgStyle:{
+  imgStyle: {
     height: windowHeight,
     width: windowWidth,
-  }
+  },
 });
