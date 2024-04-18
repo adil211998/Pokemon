@@ -14,7 +14,8 @@ export function MyTabs() {
         tabBarLabelPosition: "beside-icon",
         tabBarLabelStyle: {
           fontWeight: "700",
-          fontSize: 15,
+          fontSize: 16,
+          
         },
         tabBarIconStyle: { display: "none" },
       }}
